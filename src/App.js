@@ -31,7 +31,8 @@ function App() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:5000/students/${semester}`
+        `http://localhost:5000/students/${semester}` ||
+          `https://absentees-list-printer-gptc-ctla.onrender.com/students/${semester}`
       );
       const studentsData = await response.json();
 
@@ -186,11 +187,13 @@ function App() {
             </button>
           </div>
           <ul className="students-list list-group text-center border">
-            {students.map((student) => (
-              <li key={student.roll_No} className="list-group-item">
-                {student.roll_No} - {student.student_name}
-              </li>
-            ))}
+            {students
+              .sort((a, b) => a.roll_No - b.roll_No) // Sort students in descending order
+              .map((student) => (
+                <li key={student.roll_No} className="list-group-item">
+                  {student.roll_No} - {student.student_name}
+                </li>
+              ))}
           </ul>
         </div>
       ) : (
