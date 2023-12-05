@@ -31,8 +31,7 @@ function App() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:5000/students/${semester}` ||
-          `https://absentees-list-printer-gptc-ctla.onrender.com/students/${semester}`
+        `http://localhost:5000/students/${semester}`
       );
       const studentsData = await response.json();
 
@@ -123,7 +122,7 @@ function App() {
         </div>
       )}
       <h1 className="text-center mb-4">
-        Students Absentees List Printer for a GPTC Cherthala
+        Students Absentees List Printer for CHE Dept. GPTC Cherthala
       </h1>
       <form onSubmit={handleSubmit} className="form">
         <div className="form-group">
