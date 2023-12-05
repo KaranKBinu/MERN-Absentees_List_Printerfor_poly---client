@@ -1,29 +1,69 @@
 /* Footer.css */
 
 .footer {
-    background-color: #1b36e8d2;
-    color: #ecf0f1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 200px;
-    position: relative;
-    border-radius: 5px;
-    width: 100%;
-    border: 2px solid rgb(255, 255, 255);
- 
-  }
+  background: linear-gradient(to bottom, #1b36e8d2, #0026e6);
+  color: #ecf0f1;
+  padding-bottom: 10px;
+  margin-top: 18%; /* Adjust margin for smaller screens */
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 100%; /* Make each section take full width on smaller screens */
   
+  text-align: center; /* Center text on smaller screens */
+}
+
+.footer-section h6,
+.footer-section strong {
+  color: #ffffff; /* Heading color */
+  margin-top: 5px;
+}
+
+.icon {
+  color: #ecf0f1;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Media Query for Mobile Views */
+@media only screen and (max-width: 767px) {
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
+      flex-direction: column; /* Change to a column layout on smaller screens */
+      align-items: center; /* Center content on smaller screens */
   }
+
+  .icon {
+      margin-right: 0; /* Remove the right margin for icons on smaller screens */
+      margin-bottom: 10px; /* Add some margin at the bottom of each icon */
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .icon {
+      font-size: 24px; /* Further decrease the icon size for screens smaller than 450px */
+      margin-bottom: 0; /* Remove the bottom margin for icons */
   
-  .footer-section h6 ,strong{
-    color: #ffffff; /* Heading color */
-    margin-top: 5px;
-  }
+}
+.footer {
+
+  margin-top: 48%; /* Adjust margin for smaller screens */
+
+}
+
+}
   
   .icon {
     color: #ecf0f1;

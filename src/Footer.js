@@ -12,7 +12,7 @@ const Footer = () => {
           <h6>All rights reserved &copy; Karan K Binu</h6>
         </div>
         <div className="footer-section">
-          <strong>For any Queries, Contact me on : </strong>
+          <strong>Contact Info: </strong>
           <a
             href="https://github.com/KaranKBinu/"
             target="_blank"
