@@ -1,0 +1,74 @@
+/* Footer.css */
+
+.footer {
+    background-color: #1b36e8d2;
+    color: #ecf0f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 200px;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+ 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-section h6 ,strong{
+    color: #ffffff; /* Heading color */
+    margin-top: 5px;
+  }
+  
+  .icon {
+    color: #ecf0f1;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+   
+  }
+  .email{
+    color: #ecf0f1; /* Hover color */
+    background-color: #fc5406;
+    border-radius: 7px;
+    padding: 1px;
+
+  }
+ .github{
+    color: #ecf0f1; /* Hover color */
+    background-color:#000000 ;
+    border-radius: 20px;
+    padding: 2px;
+ }
+ .whatsapp{
+    border: 2px solid white;
+    color:#1d8500 ; /* Hover color */
+    background-color:#ecf0f1 ;
+    border-radius: 20px;
+    padding: 2px;
+ }
+  .whatsapp:hover {
+    border: 2px solid white;
+    color:#ecf0f1 ; /* Hover color */
+    background-color: #1d8500;
+    border-radius: 20px;
+    padding: 2px;
+  }
+  .email:hover {
+    color: #fc5406; /* Hover color */
+    background-color: #ecf0f1;
+    border-radius: 7px;
+    padding: 1px;
+  }
+  .github:hover {
+    color: #000000; /* Hover color */
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    padding: 2px;
+  }
