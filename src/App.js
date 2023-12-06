@@ -30,10 +30,7 @@ function App() {
 
     try {
       setLoading(true);
-      const response = await fetch(
-        `http://localhost:5000/students/${semester}` ||
-          `https://absentees-list-printer-gptc-ctla.onrender.com/students/${semester}`
-      );
+      const response = await fetch(`https://absentees-list-printer-gptc-ctla.onrender.com/students/${semester}`);
       const studentsData = await response.json();
 
       if (studentsData.error) {
